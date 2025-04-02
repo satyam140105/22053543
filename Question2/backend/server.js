@@ -22,7 +22,7 @@ async function getAuthToken() {
       'http://20.244.56.144/evaluation-service/auth',
       AUTH_CREDENTIALS
     );
-    authToken = response.data['access token']; // Adjust based on actual response structure
+    authToken = response.data['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQzNjAzMDA4LCJpYXQiOjE3NDM2MDI3MDgsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImZjOTNiYjMxLWQzODktNGM2Ni1hOTNkLTg3YjI4ZTY4MWY5NiIsInN1YiI6InNhdHlhbXN3YWluMjI3QGdtYWlsLmNvbSJ9LCJlbWFpbCI6InNhdHlhbXN3YWluMjI3QGdtYWlsLmNvbSIsIm5hbWUiOiJzYXR5YW0gc3ViaGFtIHN3YWluIiwicm9sbE5vIjoiMjIwNTM1NDMiLCJhY2Nlc3NDb2RlIjoibndwd3JaIiwiY2xpZW50SUQiOiJmYzkzYmIzMS1kMzg5LTRjNjYtYTkzZC04N2IyOGU2ODFmOTYiLCJjbGllbnRTZWNyZXQiOiJLWkpiTXdkbVRXQ1pKc2hnIn0.Y4GXu__Ts-JzNcYEKa6_dJI9CIHE2HNlj2VOFA_96xs']; 
     console.log('Authentication successful');
   } catch (error) {
     console.error('Authentication failed:', error);
